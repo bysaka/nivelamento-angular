@@ -1,0 +1,25 @@
+
+<fieldset>
+  <label for="search">Pesquisar</label>
+  <input type="text" />
+</fieldset>
+
+<button type="button" ui-sref="product-add">Adicionar</button>
+
+<table border="on">
+  <thead>
+    <tr>
+      <td>Nome do produto</td>
+      <td>Preço</td>
+      <td></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="product in products">
+      <td ng-bind="product.name"></td>
+      <td ng-bind="product.price | currency:'R$'"></td>
+      <td><a ui-sref='product-edit({id: $index})'>Editar</a>&emsp;<a href='#'>Remover</a></td>
+    </tr>
+  </tbody>
+</table>

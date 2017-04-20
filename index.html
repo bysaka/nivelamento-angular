@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Venda2.0</title>
+    <meta charset="utf8" />
+  </head>
+
+  <body>
+    
+    <ui-view></ui-view>
+    
+    <script src="./assets/libs/angular.js"></script>
+    <script src="./assets/libs/angular-ui-router.js"></script>
+
+    <script src="./src/app.module.js"></script>
+    <script src="./src/app.router.js"></script>
+    
+
+    <!-- Modulo de produto -->
+    <script src="./src/product/product.module.js"></script>
+    <script src="./src/product/product.router.js"></script>
+    <script src="./src/product/product.service.js"></script>
+    <script src="./src/product/product-list.controller.js"></script>
+    <script src="./src/product/product-add.controller.js"></script>
+    <script src="./src/product/product-edit.controller.js"></script>
+
+    
+    
+  </body>
+</html>

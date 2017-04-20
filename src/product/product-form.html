@@ -1,0 +1,16 @@
+<button ui-sref="product-list">Voltar para listagem</button>
+
+
+<form ng-submit="onSubmit()">
+  <fieldset>
+    <label for="name">Nome: </label>
+    <input type="text" id="name" name="name" ng-model="product.name">
+  </fieldset>
+
+  <fieldset>
+    <label for="price">Preço: </label>
+    <input type="text" id="price" name="price" ng-model="product.price">
+  </fieldset>
+
+  <button type="submit" style="background: green;color: white;">Salvar</button>
+</form>
